@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+    background-color: cadetblue;
+}
+
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px ;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+}
+
+.logo span {
+    color: salmon;
+    font-size: 40px;
+}
+
+.nav{
+    margin-top: 20px;
+    justify-content: center;
+    
+   
+}
+
+.nav ul{
+    display: flex;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.nav li{
+    margin-left: 30px;
+}
+
+.nav li a{
+    color: white;
+}
+
+#menu{
+    
+    height: 30px;
+    width: 35px;
+    margin: 20px 20px 0 0;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: salmon;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+
+#bar3{
+    transform: translateY(4px);
+}
+
+/*--------------- toggle---------------------*/
+
+.change .bar{
+
+    background-color: seashell; 
+    transition: 0.6s ease-in-out;
+}
+
+.change #bar1{
+
+    transform: translateY(4px) rotateZ(45deg);
+}
+
+.change #bar3 {
+    
+        transform: translateY(-6px) rotateZ(-45deg);
+    }
+
+    .change #bar2{
+        opacity: 0;
+    }    
+.change.nav ul{
+    display: block;    
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+/* ----------- MEDIA -----------------------*/
+
+@media screen and (min-width: 768px) {
+
+    #menu{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+   
+    .nav ul{
+        display: none;    
+        margin-top: 20px;
+        margin-right: 70px;
+
+    }
+
+
+     .nav li{
+        margin-top: 20px;
+     }
+    #menu{
+        display: block;
+    }
+
+}
+
+/* ---------------------------------------------- NAV AREA END ----------------------------------------------*/
